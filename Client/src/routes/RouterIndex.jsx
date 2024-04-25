@@ -5,7 +5,7 @@ import { AdminLayout } from "../layouts/AdminLayout";
 import { Login } from "../pages/Auth/Login/Login";
 import { Register } from "../pages/Auth/Register/Register";
 import Home from "../pages/Customer/home";
-import { PageNotFound } from "../common/errors/page-not-found/PageNotFound";
+import { PageNotFound } from "../components/errors/page-not-found/PageNotFound";
 const routes = [
   {
     path: "/auth",
