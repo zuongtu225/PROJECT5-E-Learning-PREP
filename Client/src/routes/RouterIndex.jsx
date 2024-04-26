@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import { AuthLayout } from "../layouts/AuthLayout";
-import { CustomerLayout } from "../layouts/CustomerLayout";
+import { UserLayout } from "../layouts/UserLayout";
 import { AdminLayout } from "../layouts/AdminLayout";
 import { Login } from "../pages/Auth/Login/Login";
 import { Register } from "../pages/Auth/Register/Register";
-import Home from "../pages/Customer/home";
+import Home from "../pages/User/home";
 import { PageNotFound } from "../components/errors/page-not-found/PageNotFound";
 const routes = [
   {
@@ -23,7 +23,7 @@ const routes = [
   },
   {
     path: "",
-    element: <CustomerLayout />,
+    element: <UserLayout />,
     children: [
       {
         path: "",
