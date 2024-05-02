@@ -1,0 +1,76 @@
+@import "../../../sass/variables";
+
+.banner {
+  position: relative;
+  &__container {
+    padding-top: 80px;
+  }
+  &__top {
+    height: 376px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__heading {
+    color: $heading-color;
+    width: 100%;
+    max-width: 380px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 59px;
+    text-align: center;
+    span {
+      max-width: 380px;
+      color: $primary-color;
+    }
+  }
+  &__image {
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__bottom {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__graduation {
+    top: 30px;
+    width: 400px;
+    border-radius: 8px;
+    height: 187px;
+    padding: 40px;
+    text-align: center;
+    position: absolute;
+    position: relative;
+    cursor: pointer;
+    transition: 0.7s;
+    background: $white-color;
+    img {
+      position: absolute;
+      top: -20%;
+      left: 40%;
+    }
+    h1 {
+      color: $heading-color;
+      font-size: 24px;
+      font-weight: 700;
+      margin-top: 32px;
+    }
+    p {
+      margin-top: 16px;
+      font-weight: 500;
+    }
+    &:hover {
+      top: 10px;
+    }
+  }
+}
+.award {
+  width: 100%;
+  height: 500px;
+  background: $primary-color;
+}

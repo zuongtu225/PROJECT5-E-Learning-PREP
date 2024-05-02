@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom";
-import { AuthLayout } from "../layouts/AuthLayout";
-import { UserLayout } from "../layouts/UserLayout";
-import { AdminLayout } from "../layouts/AdminLayout";
 import { Login } from "../pages/Auth/Login/Login";
-import { Register } from "../pages/Auth/Register/Register";
-import Home from "../pages/User/home";
 import { PageNotFound } from "../components/errors/page-not-found/PageNotFound";
+import UserLayout from "../layouts/user/UserLayout";
+import AdminLayout from "../layouts/admin/AdminLayout";
+import AuthLayout from "../layouts/auth/AuthLayout";
+import Home from "../pages/User/home/Home";
+import Register from "../pages/Auth/Register/Register";
 const routes = [
   {
     path: "/auth",

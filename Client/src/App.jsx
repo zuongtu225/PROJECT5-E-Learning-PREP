@@ -1,5 +1,4 @@
 import RouterIndex from "./routes/RouterIndex";
-
 function App() {
   return <RouterIndex />;
 }

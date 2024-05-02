@@ -1,0 +1,26 @@
+.wapper {
+  max-width: 1440px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background: black;
+  height: 1000px;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+body {
+  font-family: $font;
+  line-height: 24px;
+  color: $text-color;
+  background: $gray-color;
+}
+.button {
+  background-color: $primary-color;
+  &--primary {
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-weight: 600;
+    color: $white-color;
+  }
+}
