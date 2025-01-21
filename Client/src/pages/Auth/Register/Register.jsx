@@ -2,11 +2,22 @@ import { useState } from "react";
 import signup from "../../../assets/bg-signup.png";
 import logoPrep from "../../../assets/logoPrep.jpg";
 import "./Register.scss";
+import { registerAPI } from "../../../Apis/Auth/Register";
 function Register() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+
   const signupNow = (e) => {
     e.preventDefault();
-    console.log("dky");
+    let user = {
+      email,
+      password,
+      confirmPassword,
+    };
+    registerAPI(user);
   };
+
   return (
     <div className="wrapper">
       <div className="register">
@@ -25,11 +36,17 @@ function Register() {
             </div>
             <div className="information">
               <label>Nhập email</label>
-              <input type="text" />
+              <input type="text" onChange={(e) => setEmail(e.target.value)} />
               <label>Nhập mật khẩu</label>
-              <input type="text" />
+              <input
+                type="password"
+                onChange={(e) => setPassword(e.target.value)}
+              />
               <label>Nhập lại mật khẩu</label>
-              <input type="text" />
+              <input
+                type="password"
+                onChange={(e) => setConfirmPassword(e.target.value)}
+              />
               <button>Đăng Ký</button>
             </div>
           </form>
